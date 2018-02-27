@@ -1,0 +1,14 @@
+
+
+
+
+<h2>
+  <ul>
+    <li *ngFor="let resource of resources"(click)="onSelect(resource)">
+      <span class="badge">{{resource.id}}</span> {{resource.name}}
+    </li>
+  </ul>
+</h2>
+
+
+<app-resource-detail [resource]="selectedResource"></app-resource-detail>
