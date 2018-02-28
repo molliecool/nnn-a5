@@ -4,26 +4,32 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialAppModule } from './ngmaterial.module';
 
 import { AppComponent } from './app.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ResourceDetailComponent } from './resource-detail/resource-detail.component';
+
+import { ResourceService } from './resource.service';
+import { MessagesComponent } from './messages/messages.component';
+import { MessageService } from './message.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ResourcesComponent,
-    ResourceDetailComponent
+    ResourceDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialAppModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    ResourceService,
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
