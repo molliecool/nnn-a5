@@ -12,6 +12,8 @@ import { ResourceDetailComponent } from './resource-detail/resource-detail.compo
 import { ResourceService } from './resource.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -19,12 +21,14 @@ import { MessageService } from './message.service';
     AppComponent,
     ResourcesComponent,
     ResourceDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
     ResourceService,

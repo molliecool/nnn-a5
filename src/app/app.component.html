@@ -3,12 +3,16 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <h2>
+  <h3>
     This is in alpha and not fully released, thanks for visiting!
-  </h2>
+  </h3>
 </div>
+<nav>
+  <a routerLink="/resources">Resources</a>
+  <a routerLink="/dashboard">Dashboard</a>
+</nav>
 <div>
-  <app-resources></app-resources>
+  <router-outlet></router-outlet>
   <app-messages></app-messages>
 </div>
 
