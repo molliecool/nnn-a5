@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule, MatInput } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCardModule, MatIconModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ResourcesComponent } from './resources/resources.component';
@@ -32,12 +32,12 @@ import { NgMasonryGridModule } from 'ng-masonry-grid';
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
-    MatInputModule,
+    MatMenuModule,
     MatButtonModule,
-    MatSelectModule,
     MatIconModule,
-    NgMasonryGridModule
-  ],
+    MatCardModule,
+    MatToolbarModule,
+    NgMasonryGridModule  ],
   providers: [
     ResourceService,
     MessageService

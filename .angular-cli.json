@@ -19,10 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
-      ],
-      "scripts": [
-        "../node_modules/masonry-layout/dist/masonry.pkgd.min.js"
+        "styles.css",
+        "theme.scss"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
