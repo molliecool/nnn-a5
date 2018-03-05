@@ -1,16 +1,11 @@
 
-
-
-
-<h2>
-      <mat-card *ngFor="let resource of resources"(click)="onSelect(resource)">
-        <mat-card-title>{{resource.name}}</mat-card-title>  
-      </mat-card>
-</h2>
-
 <ng-masonry-grid>
   <ng-masonry-grid-item id="{{'masonry-item-'+i}}" *ngFor="let resource of resources; let i = index;" (click)="onSelect(resource)">
-    <mat-card>test</mat-card>
+    <h2>
+      <mat-card>
+       <mat-card-title>{{resource.title}}</mat-card-title>  
+      </mat-card>
+    </h2>
   </ng-masonry-grid-item> 
 </ng-masonry-grid>
 
