@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
-
 import { HttpModule } from '@angular/http';
 
 import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule, MatInput } from '@angular/material';
@@ -18,6 +17,7 @@ import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { NgMasonryGridModule } from 'ng-masonry-grid';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
-    MatIconModule
+    MatIconModule,
+    NgMasonryGridModule
   ],
   providers: [
     ResourceService,

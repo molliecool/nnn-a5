@@ -10,5 +10,10 @@
   </ul>
 </h2>
 
+<ng-masonry-grid>
+  <ng-masonry-grid-item id="{{'masonry-item-'+i}}" *ngFor="let resource of resources; let i = index;" (click)="onSelect(resource)">
+    <mat-card>test</mat-card>
+  </ng-masonry-grid-item> 
+</ng-masonry-grid>
 
 <app-resource-detail [resource]="selectedResource"></app-resource-detail>
