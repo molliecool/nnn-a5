@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatIconModule, MatMenuModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatIconModule, MatMenuModule, MatToolbarModule, MatGridListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ResourcesComponent } from './resources/resources.component';
@@ -17,7 +17,6 @@ import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-import { NgMasonryGridModule } from 'ng-masonry-grid';
 
 @NgModule({
   declarations: [
@@ -37,7 +36,8 @@ import { NgMasonryGridModule } from 'ng-masonry-grid';
     MatIconModule,
     MatCardModule,
     MatToolbarModule,
-    NgMasonryGridModule  ],
+    MatGridListModule  
+  ],
   providers: [
     ResourceService,
     MessageService

@@ -15,6 +15,7 @@ export class ResourcesComponent implements OnInit {
 
   resources: Resource[];
   selectedResource: Resource;
+  
 
 
   constructor(private resourceService: ResourceService) { }

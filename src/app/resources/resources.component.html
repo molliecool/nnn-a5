@@ -1,12 +1,14 @@
-
-<ng-masonry-grid>
-  <ng-masonry-grid-item id="{{'masonry-item-'+i}}" *ngFor="let resource of resources; let i = index;" (click)="onSelect(resource)">
-    <h2>
-      <mat-card>
-       <mat-card-title>{{resource.title}}</mat-card-title>  
-      </mat-card>
-    </h2>
-  </ng-masonry-grid-item> 
-</ng-masonry-grid>
+<div>
+  <div class="container">
+    <div class="item" *ngFor="let resource of resources" (click)="onSelect(resource)">
+      
+        <mat-card>
+          <mat-card-title>{{resource.title}}</mat-card-title> 
+          <img src="{{resource.imageLink}}"/>
+        </mat-card>
+      
+      </div> 
+  </div>
+</div>
 
 <app-resource-detail [resource]="selectedResource"></app-resource-detail>
