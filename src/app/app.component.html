@@ -1,14 +1,32 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>MyMaterial</span>
+  
+      <span class="example-spacer"></span>
+      
+      <button mat-button>About</button>
+      <button mat-button>Services</button>
+      <button mat-button>Contact</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
 
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <h2>
+  <h3>
     This is in alpha and not fully released, thanks for visiting!
-  </h2>
+  </h3>
 </div>
+<nav>
+  <button mat-button>Test</button>
+  <a routerLink="/resources">Resources</a>
+  <a routerLink="/dashboard">Dashboard</a>
+</nav>
 <div>
-  <app-resources></app-resources>
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
 </div>
 
 
