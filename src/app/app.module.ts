@@ -2,9 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatIconModule, MatMenuModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatIconModule, MatMenuModule, MatToolbarModule, MatGridListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ResourcesComponent } from './resources/resources.component';
@@ -34,7 +35,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule  
   ],
   providers: [
     ResourceService,

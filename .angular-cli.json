@@ -22,7 +22,6 @@
         "styles.css",
         "theme.scss"
       ],
-      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
